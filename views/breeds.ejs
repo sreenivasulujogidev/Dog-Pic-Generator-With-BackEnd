@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Available Breeds List</title>
+  </head>
+  <body>
+    <div class="box">
+      <div id="result" style="font-size: 24px"></div>
+    </div>
+  </body>
+  <script>
+    let result = document.getElementById("result");
+    function allBreeds() {
+      let ol = document.createElement("ol");
+      breeds.forEach((breed) => {
+        let li = document.createElement("li");
+        li.innerHTML = breed;
+        ol.appendChild(li);
+      });
+      result.appendChild(ol);
+    }
+
+    const breeds = [
+      "affenpinscher",
+      "african",
+      "airedale",
+      "akita",
+      "appenzeller",
+      "australian",
+      "bakharwal",
+      "basenji",
+      "beagle",
+      "bluetick",
+      "borzoi",
+      "bouvier",
+      "boxer",
+      "brabancon",
+      "briard",
+      "buhund",
+      "bulldog",
+      "bullterrier",
+      "cattledog",
+      "cavapoo",
+      "chihuahua",
+      "chippiparai",
+      "chow",
+      "clumber",
+      "cockapoo",
+      "collie",
+      "coonhound",
+      "corgi",
+      "cotondetulear",
+      "dachshund",
+      "dalmatian",
+      "dane",
+      "danish",
+      "deerhound",
+      "dhole",
+      "dingo",
+      "doberman",
+      "elkhound",
+      "entlebucher",
+      "eskimo",
+      "finnish",
+      "frise",
+      "gaddi",
+      "german",
+      "greyhound",
+      "groenendael",
+      "havanese",
+      "hound",
+      "husky",
+      "keeshond",
+      "kelpie",
+      "kombai",
+      "komondor",
+      "kuvasz",
+      "labradoodle",
+      "labrador",
+      "leonberg",
+      "lhasa",
+      "malamute",
+      "malinois",
+      "maltese",
+      "mastiff",
+      "mexicanhairless",
+      "mix",
+      "mountain",
+      "mudhol",
+      "newfoundland",
+      "otterhound",
+      "ovcharka",
+      "papillon",
+      "pariah",
+      "pekinese",
+      "pembroke",
+      "pinscher",
+      "pitbull",
+      "pointer",
+      "pomeranian",
+      "poodle",
+      "pug",
+      "puggle",
+      "pyrenees",
+      "rajapalayam",
+      "redbone",
+      "retriever",
+      "ridgeback",
+      "rottweiler",
+      "rough",
+      "saluki",
+      "samoyed",
+      "schipperke",
+      "schnauzer",
+      "segugio",
+      "setter",
+      "sharpei",
+      "sheepdog",
+      "shiba",
+      "shihtzu",
+      "spaniel",
+      "spitz",
+      "springer",
+      "stbernard",
+      "terrier",
+      "tervuren",
+      "vizsla",
+      "waterdog",
+      "weimaraner",
+      "whippet",
+      "wolfhound",
+    ];
+    allBreeds();
+  </script>
+</html>
